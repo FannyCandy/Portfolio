@@ -1,29 +1,66 @@
 
 body {
-    background-color: gray;
+    background-color: lightgray;
+    font-family: sans-serif;
 }
 
 header {
     font-family: sans-serif;
-    color:whitesmoke;
-}
-
-.headerBackground {
+    color: gray;
     height: 400px;
     width: 100%;
-    background-image: url(../images/header.jpg);
-    background-color: transparent;
+    background-image: url("../images/header.jpg");
     background-position: center;
 }
 
-header h1 {
+h1 {
     display: inline-block;
     font-size: 40px;
 }
 
-header nav {
+nav {
+    display: flex;
+    float: right;
+}
+
+nav a {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-size: 20px;
+    color: gray;
 }
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.card {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    min-width: 200px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    color: gray;
+}
+
+h2 {
+    font-size: medium;
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  }
+  
