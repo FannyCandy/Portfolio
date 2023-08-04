@@ -1,0 +1,29 @@
+
+body {
+    background-color: gray;
+}
+
+header {
+    font-family: sans-serif;
+    color:whitesmoke;
+}
+
+.headerBackground {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/header.jpg);
+    background-color: transparent;
+    background-position: center;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
